@@ -1,49 +1,26 @@
-# Node.js dependencies
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
- 
-# Build outputs
-dist/
-build/
-coverage/
- 
 # Logs
 *.log
-logs/
+ 
+# Helm specific
+charts/
+*.tgz
+Chart.lock
+ 
+# Kustomize build output
 *.out
-*.pid
-*.gz
+tmp/
  
-# Environment variables
+# Environment files
 .env
-.env.*
-*.local
+*.env.*
  
-# Docker
-*.pid.lock
-docker-compose.override.yml
- 
-# Terraform
-*.tfstate
-*.tfstate.*
-.terraform/
-.terraform.lock.hcl
-crash.log
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
- 
-# IDE / Editors
+# Editor / IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *.bak
  
-# OS-specific files
+# OS-specific
 .DS_Store
 Thumbs.db
