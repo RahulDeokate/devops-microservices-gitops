@@ -1,10 +1,10 @@
 replicaCount: 2
 
 image:
-  repository: nginx
+  repository: rahuldeokate/devops-frontend
   tag: "latest"
   pullPolicy: IfNotPresent
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
