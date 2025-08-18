@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: rahuldeokate/devops-backend
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
